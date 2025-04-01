@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  padding: 2.25rem 2rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.devName {
+  font-size: 2rem;
+  font-weight: 700;
+
+  line-height: 1.22;
+  color: #111111;
+}
