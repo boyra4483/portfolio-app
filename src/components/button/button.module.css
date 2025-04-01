@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.417em 2.313em;
+  font-size: 1.5rem;
+  line-height: 1.209;
+}
+
+.whiteBtn {
+  border: 1px solid #111111;
+  border-radius: 10px;
+  color: #222222;
+}
+
+.blackBtn {
+  background-color: #222222;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=button.module.css.map */
