@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 63px;
+}
+
+.navigation > li:not(:last-child) > a {
+  font-size: 1.5rem;
+  line-height: 1.209;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*# sourceMappingURL=navigation.module.css.map */
