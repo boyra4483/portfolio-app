@@ -5,7 +5,9 @@ function Header() {
   return (
     <header className={classes["header"]}>
       <span className={classes["devName"]}>BOYRA</span>
-      <Navigation />
+      <nav>
+        <Navigation />
+      </nav>
     </header>
   );
 }
