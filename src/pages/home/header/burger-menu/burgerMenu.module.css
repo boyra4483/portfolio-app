@@ -1,0 +1,45 @@
+.nav-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+}
+
+.burgerMenu {
+  width: 2.813rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  border: 0.1em solid #111111;
+}
+
+.burgerMenu::after,
+.burgerMenu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.1em solid #111111;
+}
+
+.burgerMenu::before {
+  top: 0;
+  left: 0;
+}
+
+.burgerMenu::after {
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=burgerMenu.module.css.map */
