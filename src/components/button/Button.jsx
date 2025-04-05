@@ -4,7 +4,7 @@ function Button({ color, children }) {
   const BtnClass = color == "black" ? "blackBtn" : "whiteBtn";
   return (
     <a
-      href="#"
+      href="#contacts"
       title="contacts"
       className={`${classes["button"]} ${classes[BtnClass]}`}
     >
