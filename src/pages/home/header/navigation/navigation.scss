@@ -3,6 +3,10 @@
   align-items: center;
 
   column-gap: 63px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .navigation > li:not(:last-child) > a {

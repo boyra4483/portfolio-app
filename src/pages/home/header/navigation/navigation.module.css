@@ -3,6 +3,11 @@
   align-items: center;
   column-gap: 63px;
 }
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
 
 .navigation > li:not(:last-child) > a {
   font-size: 1.5rem;
