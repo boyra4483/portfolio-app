@@ -12,4 +12,8 @@
 
   line-height: 1.22;
   color: #111111;
+
+  @media (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
 }

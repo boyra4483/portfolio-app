@@ -7,6 +7,10 @@
 
   font-size: 1.5rem;
   line-height: 1.209;
+
+  @media (max-width: 1200px) {
+    font-size: 1.3rem;
+  }
 }
 
 .whiteBtn {

@@ -3,6 +3,11 @@
   align-items: center;
   column-gap: 63px;
 }
+@media (max-width: 1024px) {
+  .navigation {
+    column-gap: 31.5px;
+  }
+}
 @media (max-width: 768px) {
   .navigation {
     display: none;
@@ -14,6 +19,11 @@
   line-height: 1.209;
   text-decoration: none;
   color: #000000;
+}
+@media (max-width: 1200px) {
+  .navigation > li:not(:last-child) > a {
+    font-size: 1.3rem;
+  }
 }
 
 /*# sourceMappingURL=navigation.module.css.map */
