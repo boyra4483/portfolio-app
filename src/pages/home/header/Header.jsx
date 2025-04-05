@@ -1,5 +1,6 @@
 import classes from "./header.module.css";
 import Navigation from "./navigation/Navigation";
+import BurgerMenu from "./burger-menu/burgerMenu";
 
 function Header() {
   return (
@@ -7,6 +8,7 @@ function Header() {
       <span className={classes["devName"]}>BOYRA</span>
       <nav>
         <Navigation />
+        <BurgerMenu />
       </nav>
     </header>
   );
