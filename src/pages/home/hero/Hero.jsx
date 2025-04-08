@@ -1,26 +1,20 @@
 import Button from "../../../components/button/Button";
-import Title from "../../../components/title/title";
 import classes from "./hero.module.css";
 
 function Hero() {
   return (
     <article className={classes["hero"]}>
-      <Title
-        styles={{
-          marginBottom: "4.375rem",
-          fontSize: "3rem",
-          lineHeight: 1.21,
-        }}
-        hlevel={1}
-      >
-        BOYRA
-      </Title>
+      <header className={classes["article-header"]}>
+        <h1 className={classes["title"]}>BOYRA</h1>
+      </header>
+
       <p className={classes["about-me"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
         urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non
         justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
         (About me in short)
       </p>
+
       <div className={classes["nav-buttons"]}>
         <Button color={"white"}>Projects</Button>
         <Button color={"black"}>Contacts</Button>
