@@ -1,9 +1,19 @@
 import classes from "./title.module.css";
 
-function Title({ margin, children }) {
+function Title({ styles, hlevel, children }) {
+  const { marginBottom, ...rest } = styles;
+
   return (
-    <header style={margin} className={classes["article-header"]}>
-      <h1 className={classes["title"]}>{children}</h1>
+    <header style={{ marginBottom }} className={classes["article-header"]}>
+      {hlevel == 1 ? (
+        <h1 style={rest} className={classes["title"]}>
+          {children}
+        </h1>
+      ) : (
+        <h2 style={rest} className={classes["title"]}>
+          {children}
+        </h2>
+      )}
     </header>
   );
 }
