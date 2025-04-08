@@ -5,12 +5,16 @@
   flex-flow: column wrap;
   align-items: center;
 
-  padding-top: calc(2.188rem);
-  margin-bottom: 3.125rem;
+  padding: 1.563rem 0;
+  margin-bottom: 1.563rem;
 }
 
-.name {
-  margin-bottom: 5.625rem;
+.article-header {
+  margin-bottom: 4.375rem;
+}
+
+.title {
+  padding: 0.208em 0;
 
   font-size: 3rem;
   line-height: 1.21;
@@ -19,11 +23,11 @@
   color: #111111;
 }
 
-.name::after {
+.title::after {
   content: "";
   position: absolute;
 
-  top: 2.875em;
+  top: calc(2.875em); //- 0.208em
   left: 50%;
 
   width: 5.479em;
@@ -33,12 +37,13 @@
 }
 
 .about-me {
-  margin-bottom: 2.813rem;
+  padding: 0.556em 0;
+  margin-bottom: 1.563rem;
+
   text-align: center;
-
   font-size: 1.125rem;
-  line-height: 1.23;
 
+  line-height: 1.23;
   max-width: 50rem;
 }
 

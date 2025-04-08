@@ -4,8 +4,8 @@ import classes from "./hero.module.css";
 function Hero() {
   return (
     <article className={classes["hero"]}>
-      <header>
-        <h1 className={classes["name"]}>BOYRA</h1>
+      <header className={classes["article-header"]}>
+        <h1 className={classes["title"]}>BOYRA</h1>
       </header>
       <p className={classes["about-me"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
