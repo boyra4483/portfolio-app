@@ -1,12 +1,11 @@
 import Button from "../../../components/button/Button";
+import Title from "../../../components/title/title";
 import classes from "./hero.module.css";
 
 function Hero() {
   return (
     <article className={classes["hero"]}>
-      <header className={classes["article-header"]}>
-        <h1 className={classes["title"]}>BOYRA</h1>
-      </header>
+      <Title margin={{ marginBottom: "4.375rem" }}>BOYRA</Title>
       <p className={classes["about-me"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
         urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non
