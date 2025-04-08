@@ -9,7 +9,7 @@ function Hero() {
         styles={{
           marginBottom: "4.375rem",
           fontSize: "3rem",
-          fontHeigt: 1.21,
+          lineHeight: 1.21,
         }}
         hlevel={1}
       >
