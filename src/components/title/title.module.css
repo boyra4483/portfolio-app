@@ -1,0 +1,19 @@
+.title {
+  padding: 0.208em 0;
+  font-size: 3rem;
+  line-height: 1.21;
+  text-align: center;
+  color: #111111;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  top: 2.875em;
+  left: 50%;
+  width: 5.479em;
+  border: 1px solid #5e5e5e;
+  transform: translate(-50%, 0);
+}
+
+/*# sourceMappingURL=title.module.css.map */
