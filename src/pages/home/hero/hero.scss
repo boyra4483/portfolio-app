@@ -9,33 +9,6 @@
   margin-bottom: 1.563rem;
 }
 
-.article-header {
-  margin-bottom: 4.375rem;
-}
-
-.title {
-  padding: 0.208em 0;
-
-  font-size: 3rem;
-  line-height: 1.21;
-
-  text-align: center;
-  color: #111111;
-}
-
-.title::after {
-  content: "";
-  position: absolute;
-
-  top: calc(2.875em); //- 0.208em
-  left: 50%;
-
-  width: 5.479em;
-  border: 1px solid #5e5e5e;
-
-  transform: translate(-50%, 0);
-}
-
 .about-me {
   padding: 0.556em 0;
   margin-bottom: 1.563rem;
