@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  position: relative;
+
+  flex-flow: column wrap;
+  align-items: center;
+
+  padding-top: calc(2.188rem);
+  margin-bottom: 3.125rem;
+}
+
+.name {
+  margin-bottom: 5.625rem;
+
+  font-size: 3rem;
+  line-height: 1.21;
+
+  text-align: center;
+  color: #111111;
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+
+  top: 2.875em;
+  left: 50%;
+
+  width: 5.479em;
+  border: 1px solid #5e5e5e;
+
+  transform: translate(-50%, 0);
+}
+
+.about-me {
+  margin-bottom: 2.813rem;
+  text-align: center;
+
+  font-size: 1.125rem;
+  line-height: 1.23;
+
+  max-width: 50rem;
+}
+
+.nav-buttons {
+  display: flex;
+
+  flex-flow: row wrap;
+  gap: 61px;
+}
