@@ -5,7 +5,16 @@ import classes from "./hero.module.css";
 function Hero() {
   return (
     <article className={classes["hero"]}>
-      <Title margin={{ marginBottom: "4.375rem" }}>BOYRA</Title>
+      <Title
+        styles={{
+          marginBottom: "4.375rem",
+          fontSize: "3rem",
+          fontHeigt: 1.21,
+        }}
+        hlevel={1}
+      >
+        BOYRA
+      </Title>
       <p className={classes["about-me"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
         urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non
