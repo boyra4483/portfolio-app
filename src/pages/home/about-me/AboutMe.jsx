@@ -1,8 +1,17 @@
+import { useSectionsRef } from "../../../contexts/ref-context/RefContext";
 import classes from "./aboutMe.module.css";
 
 function AboutMe() {
+  const sectionsRef = useSectionsRef();
+
+  function refCallBack(node) {
+    sectionsRef.current.set("about me", node);
+    return () => {
+      sectionsRef.current.delete("about me");
+    };
+  }
   return (
-    <article className={classes["about-me"]}>
+    <article ref={refCallBack} className={classes["about-me"]}>
       <header className={classes["article-header"]}>
         <h2 className={classes["title"]}>About me</h2>
       </header>
