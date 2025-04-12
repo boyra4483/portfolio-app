@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import { useSectionsRef } from "../../../../contexts/ref-context/RefContext";
+import { useArticlesRef } from "../../../../contexts/ref-context/RefContext";
 import Button from "../../../../components/button/Button";
 import classes from "./navigation.module.css";
 
 function Navigation() {
-  const sectionsRef = useSectionsRef();
+  const articlesRef = useArticlesRef();
 
   function handleClick(e) {
-    const section = sectionsRef.current.get(e.target.title);
+    const section = articlesRef.current.get(e.target.title);
     section.scrollIntoView({
       behavior: "smooth",
       block: "start",

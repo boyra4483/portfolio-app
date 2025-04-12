@@ -1,19 +1,19 @@
 import { createContext, useContext, useRef } from "react";
 
-const SectionsRefContext = createContext(null);
+const ArticlesRefContext = createContext(null);
 
-function SectionsRefProvider({ children }) {
-  const sectionsRef = useRef(new Map());
+function ArticlesRefProvider({ children }) {
+  const articlesRef = useRef(new Map());
 
   return (
-    <SectionsRefContext.Provider value={sectionsRef}>
+    <ArticlesRefContext.Provider value={articlesRef}>
       {children}
-    </SectionsRefContext.Provider>
+    </ArticlesRefContext.Provider>
   );
 }
 
-function useSectionsRef() {
-  return useContext(SectionsRefContext);
+function useArticlesRef() {
+  return useContext(ArticlesRefContext);
 }
 
-export { SectionsRefProvider, useSectionsRef };
+export { ArticlesRefProvider, useArticlesRef };

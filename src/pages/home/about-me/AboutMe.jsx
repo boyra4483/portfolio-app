@@ -1,13 +1,13 @@
-import { useSectionsRef } from "../../../contexts/ref-context/RefContext";
+import { useArticlesRef } from "../../../contexts/ref-context/RefContext";
 import classes from "./aboutMe.module.css";
 
 function AboutMe() {
-  const sectionsRef = useSectionsRef();
+  const articlesRef = useArticlesRef();
 
   function refCallBack(node) {
-    sectionsRef.current.set("about me", node);
+    articlesRef.current.set("about me", node);
     return () => {
-      sectionsRef.current.delete("about me");
+      articlesRef.current.delete("about me");
     };
   }
   return (
