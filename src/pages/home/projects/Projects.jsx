@@ -1,10 +1,20 @@
 import Project from "../../../components/project/Project";
+import { useArticlesRef } from "../../../contexts/ref-context/RefContext";
 import wordlePng from "../../../assets/pet-project-images/wordle.png";
 import classes from "./projects.module.css";
 
 function Projects() {
+  const articlesRef = useArticlesRef();
+
+  function refCallBack(node) {
+    articlesRef.current.set("projects", node);
+    return () => {
+      articlesRef.current.delete("projects");
+    };
+  }
+
   return (
-    <article className={classes["projects"]}>
+    <article ref={refCallBack} className={classes["projects"]}>
       <header className={classes["article-header"]}>
         <h2 className={classes["title"]}>Projects</h2>
       </header>
