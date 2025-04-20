@@ -1,0 +1,12 @@
+@mixin text-font($alignment: center) {
+  font-size: 1.125rem;
+  line-height: 1.23;
+  text-align: $alignment;
+  color: #111111;
+}
+
+@mixin header-font($line-height: 1.22, $alignment: center) {
+  line-height: $line-height;
+  text-align: $alignment;
+  color: #111111;
+}
