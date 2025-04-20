@@ -7,8 +7,8 @@ function Navigation() {
   const articlesRef = useArticlesRef();
 
   function handleClick(e) {
-    const section = articlesRef.current.get(e.target.title);
-    section.scrollIntoView({
+    const article = articlesRef.current.get(e.target.title);
+    article.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
@@ -27,7 +27,7 @@ function Navigation() {
         </a>
       </li>
       <li>
-        <a onClick={handleClick} href="#projects" title="projects section">
+        <a onClick={handleClick} href="#projects" title="projects">
           Projects
         </a>
       </li>
