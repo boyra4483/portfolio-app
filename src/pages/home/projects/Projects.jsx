@@ -1,6 +1,5 @@
+import Project from "../../../components/project/Project";
 import wordlePng from "../../../assets/pet-project-images/wordle.png";
-import githubIcon from "../../../assets/icons/github-link-icon.svg";
-import liveLinkIcon from "../../../assets/icons/live-link-icon.svg";
 import classes from "./projects.module.css";
 
 function Projects() {
@@ -18,122 +17,58 @@ function Projects() {
         </ul>
       </section>
       <div className={classes["pet-projects"]}>
-        <article className={classes["project"]}>
-          <img src={wordlePng} alt="screenshot of wordle project" />
-          <h3 className={classes["project-title"]}>wordle</h3>
-          <p className={classes["project-description"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt
-            tempore maiores perferendis quasi veniam deleniti quos quisquam
-            possimus inventore quam ipsum nihil hic, officia voluptate, cum
-            similique illo? Velit!
-          </p>
-          <ul className={classes["tech-stack"]}>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSX</li>
-            <li>REACT</li>
-            <li>AXIOS</li>
-          </ul>
-          <ul className={classes["project-links"]}>
-            <li>
-              <a href="https://github.com/boyra4483/wordle" target="_blank">
-                <img src={githubIcon} alt="github icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://boyra4483.github.io/wordle/" target="_blank">
-                <img src={liveLinkIcon} alt="live link icon" />
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article className={classes["project"]}>
-          <img src={wordlePng} alt="screenshot of wordle project" />
-          <h3 className={classes["project-title"]}>wordle</h3>
-          <p className={classes["project-description"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt
-            tempore maiores perferendis quasi veniam deleniti quos quisquam
-            possimus inventore quam ipsum nihil hic, officia voluptate, cum
-            similique illo? Velit!
-          </p>
-          <ul className={classes["tech-stack"]}>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSX</li>
-            <li>REACT</li>
-            <li>AXIOS</li>
-          </ul>
-          <ul className={classes["project-links"]}>
-            <li>
-              <a href="https://github.com/boyra4483/wordle" target="_blank">
-                <img src={githubIcon} alt="github icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://boyra4483.github.io/wordle/" target="_blank">
-                <img src={liveLinkIcon} alt="live link icon" />
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article className={classes["project"]}>
-          <img src={wordlePng} alt="screenshot of wordle project" />
-          <h3 className={classes["project-title"]}>wordle</h3>
-          <p className={classes["project-description"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt
-            tempore maiores perferendis quasi veniam deleniti quos quisquam
-            possimus inventore quam ipsum nihil hic, officia voluptate, cum
-            similique illo? Velit!
-          </p>
-          <ul className={classes["tech-stack"]}>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSX</li>
-            <li>REACT</li>
-            <li>AXIOS</li>
-          </ul>
-          <ul className={classes["project-links"]}>
-            <li>
-              <a href="https://github.com/boyra4483/wordle" target="_blank">
-                <img src={githubIcon} alt="github icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://boyra4483.github.io/wordle/" target="_blank">
-                <img src={liveLinkIcon} alt="live link icon" />
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article className={classes["project"]}>
-          <img src={wordlePng} alt="screenshot of wordle project" />
-          <h3 className={classes["project-title"]}>wordle</h3>
-          <p className={classes["project-description"]}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt
-            tempore maiores perferendis quasi veniam deleniti quos quisquam
-            possimus inventore quam ipsum nihil hic, officia voluptate, cum
-            similique illo? Velit!
-          </p>
-          <ul className={classes["tech-stack"]}>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSX</li>
-            <li>REACT</li>
-            <li>AXIOS</li>
-          </ul>
-          <ul className={classes["project-links"]}>
-            <li>
-              <a href="https://github.com/boyra4483/wordle" target="_blank">
-                <img src={githubIcon} alt="github icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://boyra4483.github.io/wordle/" target="_blank">
-                <img src={liveLinkIcon} alt="live link icon" />
-              </a>
-            </li>
-          </ul>
-        </article>
+        <Project
+          imgSrc={wordlePng}
+          title="wordle"
+          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          projectLinks={[
+            "https://github.com/boyra4483/wordle",
+            "https://boyra4483.github.io/wordle/",
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
+          optio quaerat tenetur cupiditate id ex eius et possimus modi! Officia
+          ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
+        </Project>
+        <Project
+          imgSrc={wordlePng}
+          title="wordle"
+          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          projectLinks={[
+            "https://github.com/boyra4483/wordle",
+            "https://boyra4483.github.io/wordle/",
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
+          optio quaerat tenetur cupiditate id ex eius et possimus modi! Officia
+          ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
+        </Project>
+        <Project
+          imgSrc={wordlePng}
+          title="wordle"
+          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          projectLinks={[
+            "https://github.com/boyra4483/wordle",
+            "https://boyra4483.github.io/wordle/",
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
+          optio quaerat tenetur cupiditate id ex eius et possimus modi! Officia
+          ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
+        </Project>
+        <Project
+          imgSrc={wordlePng}
+          title="wordle"
+          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          projectLinks={[
+            "https://github.com/boyra4483/wordle",
+            "https://boyra4483.github.io/wordle/",
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
+          optio quaerat tenetur cupiditate id ex eius et possimus modi! Officia
+          ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
+        </Project>
       </div>
     </article>
   );
