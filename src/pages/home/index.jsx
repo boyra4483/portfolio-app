@@ -2,6 +2,7 @@ import { ArticlesRefProvider } from "../../contexts/ref-context/RefContext";
 import Header from "./header/Header";
 import Hero from "./hero/Hero";
 import AboutMe from "./about-me/AboutMe";
+import Projects from "./projects/Projects";
 import classes from "./index.module.css";
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
       <main className={classes["main"]}>
         <Hero />
         <AboutMe />
+        <Projects />
       </main>
     </ArticlesRefProvider>
   );
