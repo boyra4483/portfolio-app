@@ -13,7 +13,6 @@
 
 .title {
   padding: 0.278em;
-  font-size: 2.25rem;
   line-height: 1.22;
   text-align: center;
   color: #111111;
@@ -33,9 +32,9 @@
   padding: 0.556em;
   margin-bottom: 1.563rem;
   max-width: 55rem;
-  text-align: center;
   font-size: 1.125rem;
   line-height: 1.23;
+  text-align: center;
   color: #111111;
 }
 

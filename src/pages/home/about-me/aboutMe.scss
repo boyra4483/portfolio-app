@@ -17,12 +17,7 @@
 
 .title {
   padding: 0.278em;
-
-  font-size: 2.25rem;
-  line-height: 1.22;
-
-  text-align: center;
-  color: #111111;
+  @include common.header-font;
 }
 
 .title::after {
@@ -43,7 +38,7 @@
   margin-bottom: 1.563rem;
 
   max-width: 55rem;
-  @include common.font($alignment: center);
+  @include common.text-font($alignment: center);
 }
 
 .tech-stack {

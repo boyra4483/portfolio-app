@@ -1,3 +1,5 @@
+@use "../../../styles/common.scss";
+
 .hero {
   display: flex;
   position: relative;
@@ -15,12 +17,7 @@
 
 .title {
   padding: 0.208em 0;
-
-  font-size: 3rem;
-  line-height: 1.21;
-
-  text-align: center;
-  color: #111111;
+  @include common.header-font($line-height: 1.21);
 }
 
 .title::after {
