@@ -1,4 +1,4 @@
-import wordlePng from "../../../assets/pet-project-icons/wordle.png";
+import wordlePng from "../../../assets/pet-project-images/wordle.png";
 import githubIcon from "../../../assets/icons/github-link-icon.svg";
 import liveLinkIcon from "../../../assets/icons/live-link-icon.svg";
 import classes from "./projects.module.css";
