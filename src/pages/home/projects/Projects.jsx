@@ -4,6 +4,7 @@ import wordleImg from "../../../assets/pet-project-images/wordle.jpg";
 import todoImg from "../../../assets/pet-project-images/to-do.jpg";
 import calculatorImg from "../../../assets/pet-project-images/calculator.jpg";
 import weatherImg from "../../../assets/pet-project-images/weather.jpg";
+import memoryCardGameImg from "../../../assets/pet-project-images/memory-card-game.jpg";
 import classes from "./projects.module.css";
 
 function Projects() {
@@ -76,6 +77,19 @@ function Projects() {
           projectLinks={[
             "https://github.com/boyra4483/calculator-app",
             "https://boyra4483.github.io/calculator-app/",
+          ]}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
+          optio quaerat tenetur cupiditate id ex eius et possimus modi! Officia
+          ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
+        </Project>
+        <Project
+          imgSrc={memoryCardGameImg}
+          title="memory card game"
+          stack={["HTML", "CSS", "JS", "firebase"]}
+          projectLinks={[
+            "https://github.com/boyra4483/memory-card-game",
+            "https://boyra4483.github.io/memory-card-game/",
           ]}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
