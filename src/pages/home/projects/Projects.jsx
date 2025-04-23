@@ -1,6 +1,9 @@
 import Project from "../../../components/project/Project";
 import { useArticlesRef } from "../../../contexts/ref-context/RefContext";
-import wordlePng from "../../../assets/pet-project-images/wordle.png";
+import wordleImg from "../../../assets/pet-project-images/wordle.jpg";
+import todoImg from "../../../assets/pet-project-images/to-do.jpg";
+import calculatorImg from "../../../assets/pet-project-images/calculator.jpg";
+import weatherImg from "../../../assets/pet-project-images/weather.jpg";
 import classes from "./projects.module.css";
 
 function Projects() {
@@ -28,7 +31,7 @@ function Projects() {
       </section>
       <div className={classes["pet-projects"]}>
         <Project
-          imgSrc={wordlePng}
+          imgSrc={wordleImg}
           title="wordle"
           stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
           projectLinks={[
@@ -41,12 +44,12 @@ function Projects() {
           ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
         </Project>
         <Project
-          imgSrc={wordlePng}
-          title="wordle"
-          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          imgSrc={todoImg}
+          title="to-do"
+          stack={["HTML", "CSS", "JSX", "REACT"]}
           projectLinks={[
-            "https://github.com/boyra4483/wordle",
-            "https://boyra4483.github.io/wordle/",
+            "https://github.com/boyra4483/to-do-app",
+            "https://boyra4483.github.io/to-do-app/",
           ]}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
@@ -54,12 +57,12 @@ function Projects() {
           ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
         </Project>
         <Project
-          imgSrc={wordlePng}
-          title="wordle"
-          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          imgSrc={weatherImg}
+          title="weather-app"
+          stack={["HTML", "CSS", "JSX", "REACT", "REACT-ROUTER"]}
           projectLinks={[
-            "https://github.com/boyra4483/wordle",
-            "https://boyra4483.github.io/wordle/",
+            "https://github.com/boyra4483/weather-app",
+            "https://boyra4483.github.io/weather-app/",
           ]}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
@@ -67,12 +70,12 @@ function Projects() {
           ex dignissimos dolorum facere! Nihil minus provident sed dolorem.
         </Project>
         <Project
-          imgSrc={wordlePng}
-          title="wordle"
-          stack={["HTML", "CSS", "JSX", "REACT", "AXIOS"]}
+          imgSrc={calculatorImg}
+          title="calculator"
+          stack={["HTML", "CSS", "JSX", "REACT"]}
           projectLinks={[
-            "https://github.com/boyra4483/wordle",
-            "https://boyra4483.github.io/wordle/",
+            "https://github.com/boyra4483/calculator-app",
+            "https://boyra4483.github.io/calculator-app/",
           ]}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam
