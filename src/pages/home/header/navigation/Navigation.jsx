@@ -32,9 +32,7 @@ function Navigation() {
         </a>
       </li>
       <li>
-        <Button onClick={handleClick} color={"black"}>
-          Contacts
-        </Button>
+        <Button color={"black"}>Contacts</Button>
       </li>
     </ul>
   );
