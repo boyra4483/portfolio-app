@@ -3,8 +3,8 @@ import liveLinkIcon from "../../assets/icons/live-link-icon.svg";
 import classes from "./project.module.css";
 
 function Project({ imgSrc, title, stack, projectLinks, children }) {
-  const techStackItems = stack.map((item, id) => {
-    <li key={id}>{item}</li>;
+  const techStackItems = stack.split(" ").map((item, id) => {
+    return <li key={id}>{item}</li>;
   });
 
   return (
