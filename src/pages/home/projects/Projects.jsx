@@ -7,6 +7,13 @@ import weatherImg from "../../../assets/pet-project-images/weather.jpg";
 import memoryCardGameImg from "../../../assets/pet-project-images/memory-card-game.jpg";
 import classes from "./projects.module.css";
 
+const projectData = {
+  "html css": [],
+  js: [],
+  reactJs: [],
+};
+// console.log(crypto.randomUUID());
+
 function Projects() {
   const articlesRef = useArticlesRef();
 
@@ -27,7 +34,8 @@ function Projects() {
           <li>ALL</li>
           <li>HTML+CSS</li>
           <li>JAVASCRIPT</li>
-          <li>REACT+JS</li>
+          <li>REACTJS</li>
+          <li>REACTJS+REACT-ROUTER</li>
         </ul>
       </section>
       <div className={classes["pet-projects"]}>
