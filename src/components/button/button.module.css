@@ -5,6 +5,7 @@
   padding: 0.417em 2.313em;
   font-size: 1.5rem;
   line-height: 1.209;
+  border: 0;
 }
 @media (max-width: 1200px) {
   .button {
