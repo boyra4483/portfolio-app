@@ -1,0 +1,28 @@
+@use "../../../styles/common.scss";
+
+.contacts {
+  padding: 1.563rem 0;
+  position: relative;
+}
+
+.article-header {
+  margin-bottom: 2.813rem;
+}
+
+.title {
+  padding: 0.625rem;
+  @include common.header-font;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+
+  top: 2.75em;
+  left: 50%;
+
+  width: 7.306em;
+  border: 1px solid #5e5e5e;
+
+  transform: translate(-50%, 0);
+}
