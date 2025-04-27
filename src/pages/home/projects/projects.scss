@@ -3,6 +3,7 @@
 .projects {
   padding: 1.563rem 0;
   margin-bottom: 1.563rem;
+  position: relative;
 }
 
 .article-header {
@@ -11,7 +12,6 @@
 
 .title {
   padding: 0.278em;
-  position: relative;
   @include common.header-font;
 }
 
@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
 
-  top: 2.875em;
+  top: 2.75em;
   left: 50%;
 
   width: 7.306em;
