@@ -7,6 +7,11 @@
     height: 374px;
     max-width: 100%;
     margin-bottom: 0.625rem;
+
+    @media (max-width: 48rem) {
+      max-width: none;
+      width: 100%;
+    }
   }
 }
 
@@ -14,6 +19,10 @@
   padding: 0.625rem 0;
   margin-bottom: 2.5rem;
   @include common.header-font($alignment: left);
+
+  @media (max-width: 30rem) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .project-title::after {

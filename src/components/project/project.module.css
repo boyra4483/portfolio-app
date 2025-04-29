@@ -7,13 +7,24 @@
   max-width: 100%;
   margin-bottom: 0.625rem;
 }
+@media (max-width: 48rem) {
+  .project > img {
+    max-width: none;
+    width: 100%;
+  }
+}
 
 .project-title {
-  padding: 0.417em 0;
+  padding: 0.625rem 0;
   margin-bottom: 2.5rem;
   line-height: 1.22;
   text-align: left;
   color: #111111;
+}
+@media (max-width: 30rem) {
+  .project-title {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .project-title::after {
@@ -26,8 +37,8 @@
 }
 
 .project-description {
-  padding: 0.556em 0;
-  margin-bottom: 0.556em;
+  padding: 0.625rem 0;
+  margin-bottom: 0.625rem;
   font-size: 1.125rem;
   line-height: 1.23;
   text-align: left;
