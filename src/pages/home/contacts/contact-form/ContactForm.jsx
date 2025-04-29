@@ -59,16 +59,16 @@ function ContactForm() {
           />
         </p>
 
-        <span className={classes["requset-status"]}>
-          {formResponse?.message}
-        </span>
-
         {fetcher.state == "submitting" ? (
           <div className={classes["loader"]}></div>
-        ) : (
+        ) : !formResponse?.success ? (
           <Button disable={!isUserDataReady} color={"black"}>
             Submit
           </Button>
+        ) : (
+          <span className={classes["requset-status"]}>
+            {formResponse?.message}
+          </span>
         )}
       </fetcher.Form>
     </>
