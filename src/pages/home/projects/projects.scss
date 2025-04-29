@@ -1,4 +1,4 @@
-@use "../../../styles/common.scss";
+@use "../../../common-styles/common.scss";
 
 .projects {
   padding: 1.563rem 0;
@@ -11,7 +11,7 @@
 }
 
 .title {
-  padding: 0.278em;
+  padding: 0.625rem 0;
   @include common.header-font;
 }
 

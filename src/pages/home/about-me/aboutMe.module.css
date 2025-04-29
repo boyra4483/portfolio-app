@@ -12,7 +12,7 @@
 }
 
 .title {
-  padding: 0.278em;
+  padding: 0.625rem 0;
   line-height: 1.22;
   text-align: center;
   color: #111111;
@@ -29,7 +29,7 @@
 }
 
 .tech-text {
-  padding: 0.556em;
+  padding: 0.625rem;
   margin-bottom: 1.563rem;
   max-width: 55rem;
   font-size: 1.125rem;

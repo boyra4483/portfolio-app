@@ -1,4 +1,4 @@
-@use "../../../styles/common.scss";
+@use "../../../common-styles/common.scss";
 
 .hero {
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .title {
-  padding: 0.208em 0;
+  padding: 0.625rem 0;
   @include common.header-font($line-height: 1.21);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .about-me {
-  padding: 0.556em 0;
+  padding: 0.625rem 0;
   margin-bottom: 1.563rem;
 
   text-align: center;

@@ -1,4 +1,4 @@
-@use "../../../styles/common.scss";
+@use "../../../common-styles/common.scss";
 
 .about-me {
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .title {
-  padding: 0.278em;
+  padding: 0.625rem 0;
   @include common.header-font;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .tech-text {
-  padding: 0.556em;
+  padding: 0.625rem;
   margin-bottom: 1.563rem;
 
   max-width: 55rem;

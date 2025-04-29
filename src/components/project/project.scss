@@ -1,4 +1,4 @@
-@use "../../styles/common.scss";
+@use "../../common-styles/common.scss";
 
 .project {
   padding: 0.625rem;
@@ -11,7 +11,7 @@
 }
 
 .project-title {
-  padding: 0.417em 0;
+  padding: 0.625rem 0;
   margin-bottom: 2.5rem;
   @include common.header-font($alignment: left);
 }
@@ -28,8 +28,8 @@
 }
 
 .project-description {
-  padding: 0.556em 0;
-  margin-bottom: 0.556em;
+  padding: 0.625rem 0;
+  margin-bottom: 0.625rem;
   @include common.text-font($alignment: left);
 }
 

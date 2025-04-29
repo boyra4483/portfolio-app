@@ -12,7 +12,7 @@
 }
 
 .title {
-  padding: 0.208em 0;
+  padding: 0.625rem 0;
   line-height: 1.21;
   text-align: center;
   color: #111111;
@@ -29,7 +29,7 @@
 }
 
 .about-me {
-  padding: 0.556em 0;
+  padding: 0.625rem 0;
   margin-bottom: 1.563rem;
   text-align: center;
   font-size: 1.125rem;
