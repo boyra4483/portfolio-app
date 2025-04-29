@@ -1,6 +1,12 @@
 .contacts {
-  padding: 1.563rem 0;
+  padding-top: 1.563rem;
+  margin-bottom: 2rem;
   position: relative;
+}
+@media (max-width: 48rem) {
+  .contacts {
+    margin-bottom: 0;
+  }
 }
 
 .article-header {
@@ -12,6 +18,16 @@
   line-height: 1.22;
   text-align: center;
   color: #111111;
+}
+@media (max-width: 64rem) {
+  .title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 48rem) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .title::after {
