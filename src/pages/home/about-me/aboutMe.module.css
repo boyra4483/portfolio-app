@@ -6,9 +6,24 @@
   padding: 4.844rem 0;
   margin-bottom: 1.563rem;
 }
+@media (max-width: 48rem) {
+  .about-me {
+    padding: 4rem 0;
+  }
+}
+@media (max-width: 30rem) {
+  .about-me {
+    margin-bottom: 0;
+  }
+}
 
 .article-header {
   margin-bottom: 2.844rem;
+}
+@media (max-width: 64rem) {
+  .article-header {
+    margin-bottom: 1.375rem;
+  }
 }
 
 .title {
@@ -16,6 +31,16 @@
   line-height: 1.22;
   text-align: center;
   color: #111111;
+}
+@media (max-width: 64rem) {
+  .title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 48rem) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .title::after {
@@ -47,7 +72,7 @@
   flex-wrap: wrap;
 }
 .tech-stack li {
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.25;
   text-align: center;
   color: #000000;
