@@ -5,6 +5,16 @@
   align-items: center;
   margin-bottom: 1.563rem;
 }
+@media (max-width: 75.25rem) {
+  .header {
+    padding: 1.5rem 1.5rem;
+  }
+}
+@media (max-width: 30rem) {
+  .header {
+    padding: 1rem 1rem;
+  }
+}
 
 .devName {
   font-size: 2rem;
@@ -12,7 +22,7 @@
   line-height: 1.22;
   color: #111111;
 }
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .devName {
     font-size: 1.5rem;
   }
