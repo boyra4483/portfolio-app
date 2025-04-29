@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home";
 import homeLoader from "./pages/home/loader";
+import { action as homeAction } from "./pages/home/action";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -10,6 +11,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     loader: homeLoader,
+    action: homeAction,
   },
 ]);
 
