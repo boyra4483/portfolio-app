@@ -9,15 +9,31 @@
 
   padding: 1.563rem 0;
   margin-bottom: 1.563rem;
+
+  @media (max-width: 48rem) {
+    margin-bottom: 0;
+  }
 }
 
 .article-header {
   margin-bottom: 4.375rem;
+
+  @media (max-width: 64rem) {
+    margin-bottom: 2.375rem;
+  }
 }
 
 .title {
   padding: 0.625rem 0;
   @include common.header-font($line-height: 1.21);
+
+  @media (max-width: 64rem) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 48rem) {
+    font-size: 2rem;
+  }
 }
 
 .title::after {
@@ -34,7 +50,7 @@
 }
 
 .about-me {
-  padding: 0.625rem 0;
+  padding: 0.625rem;
   margin-bottom: 1.563rem;
 
   text-align: center;
@@ -49,4 +65,10 @@
 
   flex-flow: row wrap;
   gap: 61px;
+
+  @media (max-width: 30rem) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+  }
 }
