@@ -7,8 +7,8 @@ function FilterPanel({ onChangeCategory }) {
         <li>ALL</li>
         <li>HTML+CSS</li>
         <li>JAVASCRIPT</li>
-        <li>REACTJS</li>
-        <li>REACTJS+REACT-ROUTER</li>
+        <li>REACT</li>
+        <li>REACT+REACT-ROUTER</li>
       </ul>
     </section>
   );
