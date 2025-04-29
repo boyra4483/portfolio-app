@@ -6,9 +6,9 @@ function Contacts() {
   const articlesRef = useArticlesRef();
 
   function refCallBack(node) {
-    articlesRef.current.set("projects", node);
+    articlesRef.current.set("contacts", node);
     return () => {
-      articlesRef.current.delete("projects");
+      articlesRef.current.delete("contacts");
     };
   }
 
