@@ -1,22 +1,22 @@
 .nav-mobile {
   display: none;
-  @media (max-width: 768px) {
-    display: block;
-  }
-}
 
-.nav-mobile {
   ul {
     position: absolute;
 
     top: 0;
     left: 0;
   }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .nav-mobile.active {
   ul {
     display: flex;
+    touch-action: none;
 
     flex-direction: column;
     row-gap: 1.563rem;
@@ -28,6 +28,7 @@
     height: 100%;
 
     background-color: #fff;
+    z-index: 1000;
   }
 }
 
@@ -36,7 +37,7 @@
   height: 1.5rem;
 
   position: relative;
-  z-index: 1;
+  z-index: 10001;
 }
 
 .line {
