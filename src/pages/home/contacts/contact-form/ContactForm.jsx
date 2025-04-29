@@ -1,34 +1,30 @@
 import { useState } from "react";
+import { useFetcher } from "react-router-dom";
 import Button from "../../../../components/button/Button";
 import classes from "./contactForm.module.css";
 
 function ContactForm() {
-  const [result, setResult] = useState("");
+  const [userData, setUserData] = useState({
+    "user-name": "",
+    "user-message": "",
+    "user-email": "",
+  });
+  const fetcher = useFetcher();
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    const formData = new FormData(event.target);
+  const isUserDataReady = getDataStatus(userData);
 
-    formData.append("access_key", "35418066-5a76-4d8b-9444-511e467caeac");
-    setResult("Sending....");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
+  function handleChange(e) {
+    const nextUserData = { ...userData, [e.target.name]: e.target.value };
+    setUserData(nextUserData);
   }
+
   return (
     <>
-      <form onSubmit={handleSubmit} className={classes["contact-form"]}>
+      <fetcher.Form
+        onChange={handleChange}
+        method="POST"
+        className={classes["contact-form"]}
+      >
         <p className={classes["user-name"]}>
           <label htmlFor="name">Name</label>
           <input
@@ -61,11 +57,18 @@ function ContactForm() {
             className={classes["email-field"]}
           />
         </p>
-        <Button color={"black"}>Submit</Button>
-      </form>
-      <span>{result}</span>
+        <Button disable={!isUserDataReady} color={"black"}>
+          Submit
+        </Button>
+      </fetcher.Form>
     </>
   );
+}
+
+function getDataStatus(form) {
+  return !Object.values(form)
+    .map((value) => value.trim())
+    .includes("");
 }
 
 export { ContactForm as default };
