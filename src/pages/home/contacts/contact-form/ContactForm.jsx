@@ -11,6 +11,7 @@ function ContactForm() {
   });
   const fetcher = useFetcher();
 
+  const formResponse = fetcher.data;
   const isUserDataReady = getDataStatus(userData);
 
   function handleChange(e) {
@@ -57,9 +58,18 @@ function ContactForm() {
             className={classes["email-field"]}
           />
         </p>
-        <Button disable={!isUserDataReady} color={"black"}>
-          Submit
-        </Button>
+
+        <span className={classes["requset-status"]}>
+          {formResponse?.message}
+        </span>
+
+        {fetcher.state == "submitting" ? (
+          <div className={classes["loader"]}></div>
+        ) : (
+          <Button disable={!isUserDataReady} color={"black"}>
+            Submit
+          </Button>
+        )}
       </fetcher.Form>
     </>
   );
