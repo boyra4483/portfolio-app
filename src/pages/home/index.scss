@@ -2,3 +2,22 @@
   max-width: 1101px;
   margin: 0 auto;
 }
+
+.gratitude {
+  text-align: center;
+}
+
+.gratitude > a:link {
+  text-decoration: none;
+  color: #ff9e00;
+}
+
+.gratitude > a:visited {
+  color: #ff0000;
+}
+
+.gratitude > a:link:hover {
+  @media (min-width: 48rem) {
+    text-decoration: underline;
+  }
+}

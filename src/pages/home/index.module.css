@@ -3,4 +3,23 @@
   margin: 0 auto;
 }
 
+.gratitude {
+  text-align: center;
+}
+
+.gratitude > a:link {
+  text-decoration: none;
+  color: #ff9e00;
+}
+
+.gratitude > a:visited {
+  color: #ff0000;
+}
+
+@media (min-width: 48rem) {
+  .gratitude > a:link:hover {
+    text-decoration: underline;
+  }
+}
+
 /*# sourceMappingURL=index.module.css.map */
