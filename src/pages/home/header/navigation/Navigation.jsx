@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <ul className={classes["navigation"]}>
       <li>
-        <Link to="/" title="home page">
+        <Link to="/portfolio-app/" title="home page">
           Home
         </Link>
       </li>
