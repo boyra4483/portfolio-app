@@ -3,6 +3,11 @@
   justify-content: center;
   margin-bottom: 6rem;
 }
+@media (max-width: 48rem) {
+  .filterPanelContainer {
+    margin-bottom: 4rem;
+  }
+}
 
 .filterPanel {
   display: flex;
@@ -11,6 +16,12 @@
   justify-content: center;
   column-gap: 1.3rem;
   row-gap: 0.9rem;
+}
+@media (max-width: 30rem) {
+  .filterPanel {
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+  }
 }
 .filterPanel li {
   cursor: pointer;
