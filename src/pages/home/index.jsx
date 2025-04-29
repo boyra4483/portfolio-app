@@ -15,6 +15,16 @@ function Home() {
         <AboutMe />
         <Projects />
         <Contacts />
+        <p className={classes["gratitude"]}>
+          thank{" "}
+          <a
+            href="https://www.figma.com/community/file/1276573947309032643/junior-developer-portfolio-template"
+            target="_blank"
+          >
+            Aman Singh Bhogal
+          </a>{" "}
+          so much for free template
+        </p>
       </main>
     </ArticlesRefProvider>
   );
