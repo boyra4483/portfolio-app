@@ -3,9 +3,24 @@
   margin-bottom: 1.563rem;
   position: relative;
 }
+@media (max-width: 30rem) {
+  .projects {
+    margin-bottom: 0;
+  }
+}
 
 .article-header {
   margin-bottom: 4rem;
+}
+@media (max-width: 64rem) {
+  .article-header {
+    margin-bottom: 3.375rem;
+  }
+}
+@media (max-width: 30rem) {
+  .article-header {
+    margin-bottom: 2.375rem;
+  }
 }
 
 .title {
@@ -13,6 +28,16 @@
   line-height: 1.22;
   text-align: center;
   color: #111111;
+}
+@media (max-width: 64rem) {
+  .title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 48rem) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .title::after {
@@ -28,8 +53,12 @@
 .pet-projects {
   display: grid;
   gap: 4.688rem 7.063rem;
-  justify-content: center;
-  grid-template-columns: repeat(2, 30.875rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 48rem) {
+  .pet-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=projects.module.css.map */

@@ -4,15 +4,35 @@
   padding: 1.563rem 0;
   margin-bottom: 1.563rem;
   position: relative;
+
+  @media (max-width: 30rem) {
+    margin-bottom: 0;
+  }
 }
 
 .article-header {
   margin-bottom: 4rem;
+
+  @media (max-width: 64rem) {
+    margin-bottom: 3.375rem;
+  }
+
+  @media (max-width: 30rem) {
+    margin-bottom: 2.375rem;
+  }
 }
 
 .title {
   padding: 0.625rem 0;
   @include common.header-font;
+
+  @media (max-width: 64rem) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 48rem) {
+    font-size: 2rem;
+  }
 }
 
 .title::after {
@@ -32,6 +52,9 @@
   display: grid;
   gap: 4.688rem 7.063rem;
 
-  justify-content: center;
-  grid-template-columns: repeat(2, 30.875rem);
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 48rem) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
