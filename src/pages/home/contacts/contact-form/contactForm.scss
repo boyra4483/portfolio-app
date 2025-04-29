@@ -4,8 +4,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  padding: 0 0.625rem;
   grid-auto-rows: 4.688rem;
   gap: 0.938rem 4.438rem;
+
+  @media (max-width: 48rem) {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.563rem;
+  }
 
   p {
     display: flex;
@@ -20,6 +26,12 @@
     grid-column: 2;
 
     z-index: 1;
+
+    @media (max-width: 48rem) {
+      grid-column: 1;
+      grid-row: 5;
+      justify-self: stretch;
+    }
   }
 }
 
@@ -34,6 +46,11 @@
 
 .user-message {
   grid-row: span 2;
+
+  @media (max-width: 48rem) {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+  }
 }
 
 .name-field,
@@ -70,6 +87,13 @@
 
   text-align: center;
   align-self: center;
+
+  @media (max-width: 48rem) {
+    align-self: start;
+
+    grid-column: 1;
+    grid-row: 5;
+  }
 }
 
 .loader {
@@ -89,6 +113,13 @@
 
   mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
   animation: l13 1s infinite linear;
+
+  @media (max-width: 48rem) {
+    align-self: start;
+
+    grid-column: 1;
+    grid-row: 5;
+  }
 }
 
 @keyframes l13 {
