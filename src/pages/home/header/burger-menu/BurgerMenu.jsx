@@ -10,7 +10,6 @@ function BurgerMenu() {
     const parentElem = `nav[class~="${classes["nav-mobile"]}"]`;
 
     if (!elem.closest(parentElem)) return;
-
     status == "active" ? setStatus("") : setStatus("active");
   }
 
