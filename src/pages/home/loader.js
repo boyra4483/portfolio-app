@@ -83,7 +83,7 @@ function homeLoader() {
         id: 0,
       },
     ],
-    reactJs: [
+    react: [
       {
         name: "wordle",
         techStack: "HTML CSS JSX REACT AXIOS",
@@ -133,7 +133,7 @@ function homeLoader() {
         id: 4,
       },
     ],
-    "reactJs react-router": [
+    "react react-router": [
       {
         name: "weather-app",
         techStack: "HTML CSS JSX REACT REACT-ROUTER",
