@@ -1,12 +1,13 @@
 import Project from "../../../components/project/Project";
 import FilterPanel from "../../../components/filter-panel/FilterPanel";
 import { useArticlesRef } from "../../../contexts/ref-context/RefContext";
-import classes from "./projects.module.css";
-import { useState } from "react";
+import { useReducer } from "react";
 import { useLoaderData } from "react-router-dom";
+import categoryReducer from "./category-reducer/categoryReducer";
+import classes from "./projects.module.css";
 
 function Projects() {
-  const [category, setCategory] = useState("all");
+  const [category, dispatch] = useReducer(categoryReducer, "all");
   const projectData = useLoaderData();
 
   const articlesRef = useArticlesRef();
@@ -32,12 +33,10 @@ function Projects() {
   }
   function handleChangeCategory(e) {
     if (e.target.nodeName != "LI") return;
-    const nextCategory = e.target.textContent
-      .toLowerCase()
-      .replaceAll("+", " ")
-      .replaceAll("reactjs", "reactJs");
-
-    setCategory(nextCategory);
+    dispatch({
+      type: "changed-category",
+      nextCategory: e.target.textContent,
+    });
   }
 
   return (
