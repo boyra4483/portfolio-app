@@ -3,6 +3,8 @@ import todoImg from "../../assets/pet-project-images/to-do.jpg";
 import calculatorImg from "../../assets/pet-project-images/calculator.jpg";
 import weatherImg from "../../assets/pet-project-images/weather.jpg";
 import memoryCardGameImg from "../../assets/pet-project-images/memory-card-game.jpg";
+import ticTacToeImg from "../../assets/pet-project-images/tic-tac-toe.png";
+import ticTacToeAppImg from "../../assets/pet-project-images/tic-tac-toe-app.png";
 
 const memoryCardGame = {
   name: "memory-card-game",
@@ -64,13 +66,45 @@ const calculator = {
   ],
   id: 4,
 };
+const ticTacToe = {
+  name: "tic-tac-toe",
+  techStack: "HTML CSS JS",
+  description:
+    "Tic Tac Toe is a classic two-player game played on a 3x3 grid. Players take turns marking a square with either an X or an O. The goal is to be the first to get three of your symbols in a row — horizontally, vertically, or diagonally. If all the squares are filled and no player has won, the game ends in a draw.",
+  img: ticTacToeImg,
+  links: [
+    "https://github.com/boyra4483/tic-tac-toe",
+    "https://boyra4483.github.io/tic-tac-toe/",
+  ],
+  id: 5,
+};
+const ticTacToeApp = {
+  name: "tic-tac-toe-app",
+  techStack: "HTML CSS JSX REACT",
+  description:
+    "Tic Tac Toe is a simple two-player game played on a 3x3 grid. This version includes a move history feature that lets you go back to any previous move and continue playing from that point. It's a fun way to explore different outcomes or fix a mistake during the game.",
+  img: ticTacToeAppImg,
+  links: [
+    "https://github.com/boyra4483/tic-tac-toe-app",
+    "https://boyra4483.github.io/tic-tac-toe-app/",
+  ],
+  id: 6,
+};
 
 function homeLoader() {
   return {
-    all: [memoryCardGame, wordle, toDo, weatherApp, calculator],
+    all: [
+      memoryCardGame,
+      wordle,
+      toDo,
+      weatherApp,
+      calculator,
+      ticTacToe,
+      ticTacToeApp,
+    ],
     "html css": [],
-    javascript: [memoryCardGame],
-    react: [wordle, toDo, weatherApp, calculator],
+    javascript: [memoryCardGame, ticTacToe],
+    react: [wordle, toDo, weatherApp, calculator, ticTacToeApp],
     "react react-router": [weatherApp],
   };
 }
