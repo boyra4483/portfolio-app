@@ -1,12 +1,15 @@
 import { useArticlesRef } from "../../contexts/ref-context/RefContext";
 import classes from "./button.module.css";
 
-function Button({ disable = false, color, children }) {
+function Button({ disable = false, color, dispatch, children }) {
   const articlesRef = useArticlesRef();
   const BtnClass = color == "black" ? "blackBtn" : "whiteBtn";
 
   const toSection = children == "Projects" ? "projects" : "contacts";
   function handleClick(e) {
+    dispatch?.({
+      type: "click nav-btn",
+    });
     const article = articlesRef.current.get(e.target.title);
     article.scrollIntoView({
       behavior: "smooth",
