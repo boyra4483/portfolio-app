@@ -32,8 +32,8 @@
     transition: box-shadow 0.5s;
   }
 
-  li:hover {
-    @media (min-width: 48.063rem) {
+  @media (min-width: 48.063rem) {
+    li:hover {
       box-shadow: 0px 0.5em 0.85em 0px #ffdb00;
     }
   }
