@@ -5,7 +5,7 @@ import BurgerMenu from "./burger-menu/burgerMenu";
 function Header() {
   return (
     <header className={classes["header"]}>
-      <span className={classes["devName"]}>BOYRA</span>
+      <span className={classes["devName"]}>BAYRAM</span>
       <nav>
         <Navigation />
         <BurgerMenu />
