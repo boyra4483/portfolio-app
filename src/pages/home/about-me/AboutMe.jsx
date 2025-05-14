@@ -17,17 +17,20 @@ function AboutMe() {
       </header>
 
       <p className={classes["tech-text"]}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
-        urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non
-        justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
+        I've been in IT for about 2 years and I'm still learning. I've finished
+        reading react documentation and am starting to learn TS. I plan to
+        expand my stack with things like nextJs, HTTP, etc.
       </p>
 
       <ul className={classes["tech-stack"]}>
         <li>HTML</li>
         <li>CSS</li>
         <li>SASS</li>
+        <li>JS</li>
+        <li>TS</li>
         <li>JSX</li>
         <li>REACT</li>
+        <li>REACT-ROUTER-DOM</li>
         <li>GIT</li>
       </ul>
     </article>
