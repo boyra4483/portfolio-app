@@ -3,10 +3,14 @@ import { useArticlesRef } from "../../../../contexts/ref-context/RefContext";
 import Button from "../../../../components/button/Button";
 import classes from "./navigation.module.css";
 
-function Navigation() {
+function Navigation({ dispatch }) {
   const articlesRef = useArticlesRef();
 
   function handleClick(e) {
+    dispatch?.({
+      type: "click nav-btn",
+    });
+
     const article = articlesRef.current.get(e.target.title);
     article.scrollIntoView({
       behavior: "smooth",
@@ -17,7 +21,7 @@ function Navigation() {
   return (
     <ul className={classes["navigation"]}>
       <li>
-        <Link to="/portfolio-app/" title="home page">
+        <Link onClick={handleClick} to="/portfolio-app/" title="home page">
           Home
         </Link>
       </li>
@@ -32,7 +36,9 @@ function Navigation() {
         </a>
       </li>
       <li>
-        <Button color={"black"}>Contacts</Button>
+        <Button dispatch={dispatch} color={"black"}>
+          Contacts
+        </Button>
       </li>
     </ul>
   );
