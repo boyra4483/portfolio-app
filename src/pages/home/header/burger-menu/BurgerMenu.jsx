@@ -25,7 +25,7 @@ function BurgerMenu() {
       <section onClick={handleClick} className={classes["burgerMenu"]}>
         <div className={classes["line"]}></div>
       </section>
-      <Navigation />
+      <Navigation dispatch={dispatch} />
     </nav>
   );
 }
