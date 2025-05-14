@@ -5,14 +5,14 @@ function Hero() {
   return (
     <article className={classes["hero"]}>
       <header className={classes["article-header"]}>
-        <h1 className={classes["title"]}>BOYRA</h1>
+        <h1 className={classes["title"]}>BAYRAM</h1>
       </header>
 
       <p className={classes["about-me"]}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum
-        urna quis magna lobortis, eget finibus urna vestibulum. Sed nec ex non
-        justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
-        (About me in short)
+        I am Bayram and a perspective front-end dev. I am 20 years of age. I
+        studied finance in college and graduated from college as a financier.
+        but i never worked as one. I am a fast learner and adapt a new
+        environment also. i have no work experience but have many pet-projects
       </p>
 
       <div className={classes["nav-buttons"]}>
